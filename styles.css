@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #35424a;
+    padding: 20px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: lightgray;
+}
+
+main {
+    padding: 20px;
+}
+
+main section {
+    margin-bottom: 50px;
+    padding: 20px;
+    border-bottom: 1px solid #35424a;
+}
+
+main section h1,
+main section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main section p {
+    font-size: 18px;
+}
+
+.home-image {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+}
+
+.profile-pics {
+    display: block;
+    width: 100%;
+    max-width: 50px; /* updated max-width */
+    height: auto;
+    margin: 20px auto;
+}
+
+.work-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work-gallery a {
+    margin: 10px;
+}
+
+/* ... (previous styles) ... */
+
+.work-gallery pics {
+    width: 100%;
+    max-width: 200px; /* updated max-width */
+    height: auto;
+}
+
+.work-pics {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ... (remaining styles) ... */
+
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    font-size: 18px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+form button {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #35424a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #272c30;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #35424a;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
